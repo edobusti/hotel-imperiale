@@ -1,0 +1,41 @@
+.spa__section {
+  padding-top: 16rem;
+  padding-bottom: 6rem;
+  padding-left: 4.4rem;
+  padding-right: 4.4rem;
+  background-color: #fff;
+}
+
+.spa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  margin: 0 auto;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #000),
+    url(/img/spa/spa.webp);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0.1rem 0.1rem 4rem 0.1rem #5c5c5c80;
+  padding: 6.4rem 0;
+}
+
+.spa .title,
+.spa .description {
+  color: #fff;
+}
+
+.spa__text-container {
+  padding: 0 4rem;
+}
+
+@media (max-width: 57.5em) {
+  .spa {
+    grid-template-columns: 70% 1fr;
+  }
+}
+
+@media (max-width: 45em) {
+  .spa {
+    grid-template-columns: 100%;
+  }
+}

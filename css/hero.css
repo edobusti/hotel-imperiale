@@ -1,0 +1,377 @@
+.hero__section {
+  background-image: url(/img/hero/hero__background.png);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 10rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2.4rem;
+  max-width: calc(130rem + 4.4rem);
+  padding: 12.8rem 4.4rem;
+  margin: 0 auto;
+  height: 80rem;
+}
+
+.hero__heading-primary {
+  font-size: 7.2rem;
+  font-weight: 700;
+  margin-left: -0.3rem;
+  margin-bottom: 1.6rem;
+  line-height: 1.1;
+}
+
+.hero__heading-secondary {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+.hero__heading-secondary:nth-child(1) span {
+  display: none;
+}
+
+.hero__reserve-room {
+  display: flex;
+  margin: 0 auto;
+  height: 8rem;
+  width: fit-content;
+  margin-top: 20rem;
+  background-color: #fff;
+  grid-column: 1 / -1;
+  grid-row: 2;
+}
+
+.btn__hero {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2.8rem;
+}
+
+.btn.transparent a {
+  text-decoration: none;
+  color: #cd9900;
+}
+
+.btn.transparent:hover a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn.filled a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero__reserve-room {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  font-size: 1.6rem;
+
+  color: #000;
+}
+
+.hero__reserve-room > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.1rem solid #5555552c;
+  padding: 0 2.4rem;
+}
+
+.check-availability {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding-left: 0.2rem;
+}
+
+.arrival-date-container.active,
+.departure-date-container.active {
+  height: 8rem;
+  border-bottom: 0.3rem solid #cd9900;
+}
+
+.selected-date-container,
+.guests-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.selected-date-title,
+.guests-title {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.icon-calendar,
+.icon-guest {
+  color: #cd9900;
+  height: 1.6rem;
+}
+
+.choose-date-window {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 1.2rem;
+}
+
+.close-dates {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0.4rem;
+  right: -2.6rem;
+  height: 1.6rem;
+}
+
+.choose-date-window.active,
+.choose-guests.active {
+  display: block;
+  animation: fade-in 0.3s;
+}
+
+.choose-date-window > div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.select-month {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 1.2rem;
+  width: 100%;
+
+  background-color: #cd9900;
+  color: #fff;
+}
+
+.days-window {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  width: 100%;
+}
+
+.day-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+  font-size: 1.4rem;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+}
+
+.day-item:hover {
+  background-color: #cd9900;
+  color: #fff;
+}
+
+.day-item-empty {
+  padding: 1rem 1.2rem;
+}
+
+.day-item-empty:hover {
+  background-color: #fff;
+}
+
+.day-item.deleted {
+  pointer-events: none;
+  color: #616161;
+  text-decoration: line-through;
+}
+
+.day-item.deleted:hover {
+  background-color: #fff;
+  cursor: default;
+}
+
+.selected {
+  background-color: #cd9900;
+  color: #fff;
+}
+
+.hero__reserve-room .btn__search {
+  padding: 0 2.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #cd9900;
+  color: #fff;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.btn__search:hover {
+  background-color: #b98a00;
+}
+
+.btn__search svg {
+  height: 2.2rem;
+}
+
+.btn__search a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.arrow-next,
+.arrow-prev {
+  height: 1.2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.day-of-week {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  padding: 0.4rem 0;
+  border-bottom: 0.1rem solid #5555552c;
+}
+
+.day-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.choose-guests {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 1.2rem;
+  padding: 1.6rem 1.6rem;
+  width: 150%;
+}
+
+.guests-number-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev-arrow-guests,
+.next-arrow-guests {
+  display: none;
+  padding: 0 0.8rem;
+  height: 1rem;
+  font-weight: 700;
+}
+
+.prev-arrow-guests.active,
+.next-arrow-guests.active {
+  display: block;
+  animation: fade-in 0.3s;
+}
+
+@media (max-width: 75em) {
+  .hero__heading-primary {
+    font-size: 5.6rem;
+  }
+
+  .hero__heading-secondary {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .hero__reserve-room {
+    margin-top: 14rem;
+  }
+}
+
+@media (max-width: 64em) {
+  .hero__section {
+    padding: 0;
+  }
+
+  .hero {
+    padding: 6rem 4.4rem;
+  }
+
+  .close-dates {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0.4rem;
+    right: -2.6rem;
+    height: 1.6rem;
+  }
+}
+
+@media (max-width: 57.5em) {
+  .hero .availability-container {
+    display: none;
+  }
+}
+
+@media (max-width: 45em) {
+  .hero__heading-primary {
+    font-size: 4rem;
+  }
+
+  .hero__heading-secondary {
+    max-width: 34rem;
+  }
+
+  .hero__heading-secondary:nth-child(1) span {
+    display: inline;
+  }
+
+  .hero__heading-secondary:nth-child(2) {
+    display: none;
+  }
+
+  .hero__reserve-room > div {
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .hero__reserve-room {
+    grid-template-columns: auto auto;
+    max-width: 46rem;
+    margin: 10rem auto;
+  }
+
+  .guests-container {
+    border-top: 0.1rem solid #5555552c;
+  }
+
+  .arrival-date-container.active,
+  .departure-date-container.active {
+    border-top: 0.3rem solid #cd9900;
+    border-bottom: none;
+  }
+
+  .choose-date-window.check-in.active {
+    margin-left: 16rem;
+  }
+
+  .choose-date-window.check-out.active {
+    margin-right: 14rem;
+  }
+}

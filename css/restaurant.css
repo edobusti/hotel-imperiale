@@ -1,0 +1,44 @@
+.restaurant__section {
+  padding: 16rem 4.4rem;
+}
+
+.restaurant {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  max-width: 130rem;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0.1rem 0.1rem 5rem 0.1rem #5c5c5c80;
+}
+
+.restaurant__background {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 200rem;
+  z-index: -1;
+}
+
+.restaurant__text-container {
+  padding: 3.6rem 4rem;
+}
+
+.restaurant__img-container {
+  background-image: url(/img/restaurant/ristorante-chef.png);
+  background-position: right;
+  background-size: cover;
+}
+
+@media (max-width: 57.5em) {
+  .restaurant {
+    grid-template-columns: 100%;
+    grid-template-rows: 30rem 1fr;
+  }
+
+  .restaurant__img-container {
+    background-position: top;
+    max-height: 30rem;
+    grid-row: 1;
+  }
+}

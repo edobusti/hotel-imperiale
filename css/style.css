@@ -1,0 +1,105 @@
+@import url(preloader.css);
+@import url(header.css);
+@import url(header-scroll.css);
+@import url(hero.css);
+@import url(about.css);
+@import url(rooms.css);
+@import url(restaurant.css);
+@import url(spa.css);
+@import url(vip.css);
+@import url(footer.css);
+@import url(mobile-menu.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+
+html {
+  font-family: "Libre Baskerville", serif;
+  font-size: 62.5%;
+  color: #fff;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+.title {
+  font-size: 3.2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+}
+
+.title span {
+  color: #cd9900;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 6rem;
+  height: 0.1rem;
+  background-color: #cd9900;
+}
+
+.description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.btn {
+  font-size: 1.6rem;
+  padding: 1.4rem 1.8rem;
+  border: none;
+  transition: 150ms;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn.filled {
+  background-color: #cd9900;
+}
+
+.btn.filled:hover {
+  background-color: #b98a00;
+}
+
+.btn.transparent {
+  border: 0.1rem solid #cd9900;
+  background-color: transparent;
+  color: #cd9900;
+}
+
+.btn.transparent:hover {
+  background-color: #cd9900;
+  color: white;
+}
+
+@media (max-width: 75em) {
+  .title {
+    font-size: 2.6rem;
+    padding-bottom: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 1.4rem 1.6rem;
+  }
+}
