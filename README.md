@@ -12,10 +12,10 @@ responsive, and visually harmonious landing pages.
 
 ## Tech Stack
 
-- **HTML5**: Structure and content markup for the website.
-- **CSS3**: Styling and layout, utilizing Flexbox and CSS Grid for a modern, responsive design.
-- **JavaScript ES6+**: Adding interactivity, including the custom date picker feature.
-- **Photoshop**: Used to design and refine visual assets for the website, including the custom restaurant name and VIP card.
+- **HTML5**
+- **CSS3**
+- **JavaScript ES6+**
+- **Photoshop**
 
 ## Live Version on Netlify
 
