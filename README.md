@@ -5,17 +5,17 @@ responsive, and visually harmonious landing pages.
 
 ## Features
 
-- Pixel-perfect design: Every detail is crafted with precision to ensure a flawless user experience.
-- Responsive layout: Optimized for all screen sizes, including desktop, tablet, and mobile devices.
-- Custom date picker: A custom feature implemented to showcase my skills in DOM manipulation.
-- High-quality visuals: Designed and enhanced in Photoshop.
+- **Pixel-perfect design**: Every detail is crafted with precision to ensure a flawless user experience.
+- **Responsive layout**: Optimized for all screen sizes, including desktop, tablet, and mobile devices.
+- **Custom date picker**: A custom feature implemented to showcase my skills in DOM manipulation.
+- **High-quality visuals**: Designed and enhanced in Photoshop.
 
 ## Tech Stack
 
-- HTML5: Structure and content markup for the website.
-- CSS3: Styling and layout, utilizing Flexbox and CSS Grid for a modern, responsive design.
-- JavaScript: Adding interactivity, including the custom date picker feature.
-- Photoshop: Used to design and refine visual assets for the website, including the custom restaurant name and VIP card.
+- **HTML5**: Structure and content markup for the website.
+- **CSS3**: Styling and layout, utilizing Flexbox and CSS Grid for a modern, responsive design.
+- **JavaScript**: Adding interactivity, including the custom date picker feature.
+- **Photoshop**: Used to design and refine visual assets for the website, including the custom restaurant name and VIP card.
 
 ## Live Version on Netlify
 
