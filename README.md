@@ -17,11 +17,11 @@ responsive, and visually harmonious landing pages.
 - JavaScript: Adding interactivity, including the custom date picker feature.
 - Photoshop: Used to design and refine visual assets for the website, including the custom restaurant name and VIP card.
 
-## Live Version on Vercel
+## Live Version on Netlify
 
-You can view the live version of the project on **Vercel**:
+You can view the live version of the project on **Netlify**:
 
-- **Live Demo URL**: [https://hotel-imperiale.vercel.app](https://hotel-imperiale.vercel.app)
+- **Live Demo URL**: [https://hotel-imperiale.netlify.app](https://hotel-imperiale.netlify.app)
 
 ## Screenshots
 
